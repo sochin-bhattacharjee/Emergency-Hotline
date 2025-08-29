@@ -102,8 +102,8 @@ services.forEach((service) => {
         <p class="font-bold text-xl mt-4">${service.number}</p>
         <span class="badge badge-primary my-2 bg-slate-200 p-3 rounded-3xl opacity-80 w-fit mb-4">${service.category}</span>
         <div class="flex gap-3 justify-between mt-2">
-            <button class="copy-btn btn btn-sm btn-outline flex items-center border-2 w-full justify-center p-2 rounded-lg"><img class="h-6 w-6" src="../assets/copyicon.png" alt="Copy"> Copy</button>
-            <button class="call-btn btn btn-sm btn-outline w-full flex items-center justify-center p-2 rounded-lg bg-green-500 text-white"><img class="h-6 w-6" src="../assets/call-icon.png" alt="Call">Call</button>
+            <button class="copy-btn btn btn-sm btn-outline flex items-center border-2 w-full justify-center p-2 rounded-lg"><img class="h-6 w-6" src="./assets/copyicon.png" alt="Copy"> Copy</button>
+            <button class="call-btn btn btn-sm btn-outline w-full flex items-center justify-center p-2 rounded-lg bg-green-500 text-white"><img class="h-6 w-6" src="./assets/call-icon.png" alt="Call">Call</button>
         </div>
     `;
   cardsContainer.appendChild(card);
