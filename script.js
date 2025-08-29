@@ -93,9 +93,9 @@ services.forEach((service) => {
   card.innerHTML = `
         <div class="flex justify-between items-center mb-2">
             <div>
-    <img src="../assets/${service.icon}" alt="${service.name}" class="h-10 w-10">
+    <img src="./assets/${service.icon}" alt="${service.name}" class="h-10 w-10">
 </div>
-            <button class="heart-btn text-red-500 text-xl"><img class="h-6 md:h-10 w-6 md:w-10" src="../assets/heartborder.png" alt="Heart"></button>
+            <button class="heart-btn text-red-500 text-xl"><img class="h-6 md:h-10 w-6 md:w-10" src="./assets/heartborder.png" alt="Heart"></button>
         </div>
         <h4 class="font-bold text-lg font-mono">${service.name}</h4>
         <p class="font-light">${service.helped}</p>
