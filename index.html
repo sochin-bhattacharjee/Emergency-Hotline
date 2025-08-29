@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <script>
+        tailwind.config = {
+            plugins: [daisyui],
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-green-100/50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <img src="./assets/logo.png" alt="Logo" class="h-5 md:h-8 w-5 md:w-8">
+            <h1 class="md:text-xl font-bold text-green-800 w-fit">Emergency <br>Hotline</h1>
+        </div>
+        <div class="flex items-center space-x-2 md:space-x-6">
+            <div class="flex items-center space-x-1 bg-green-100 md:px-4 md:py-2 px-2 py-1 rounded-full">
+                <span id="heartCount" class="text-red-500 md:font-bold text-sm md:text-base">0</span>
+                <span><img class="h-3 md:h-6 w-3 md:w-6" src="./assets/heart.png" alt=""></span>
+            </div>
+            <div class="flex items-center space-x-1 bg-green-100 md:px-4 md:py-2 px-2 py-1 rounded-full">
+                <span id="coinCount" class="md:font-bold text-sm md:text-base">100</span>
+                <span><img class="h-3 md:h-6 w-3 md:w-6" src="./assets/coin.png" alt=""></span>
+            </div>
+            <div class="flex items-center justify-center text-white md:space-x-1">
+                <span id="copyCount" class="md:font-bold bg-green-500 p- md:px-4 md:py-2 text-sm md:text-base rounded-full px-2 py-1">0 Copy</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section start -->
+    <section class="bg-gradient-to-r from-green-900 to-green-800 text-white py-6 flex flex-col items-center justify-center">
+        <img src="./assets/logo-dark.png" alt="Hero Logo" class="h-12 w-12 md:h-16 md:w-16 md:mb-4">
+        <h2 class="text-xl md:text-3xl font-bold text-center mb-2">Emergency Service Directory</h2>
+        <p class="text-center text-sm md:text-base w-[95%] md:w-[80%]">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+    </section>
+    <!-- Banner Section end -->
+
+    <!-- Cards + History side by side section start -->
+    <main class="p-4 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4 mb-2 md:mb-4">
+        <!-- Cards Section -->
+        <section id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:col-span-3 md:col-span-2 col-span-3">
+        </section>
+
+        <!-- History Section -->
+        <section class="bg-white col-span-3 md:col-span-1 p-4 rounded shadow w-full">
+            <div class="flex justify-between items-center mb-4 border-b-2 pb-4">
+                <h3 class="lg:text-xl font-bold flex items-center space-x-2">
+                    <span><img class="lg:h-6 lg:w-6 w-3 h-3" src="./assets/watch.png" alt=""></span>
+                    <span>Call History</span>
+                </h3>
+                <button id="clearHistory" class="bg-green-500 text-white px-4 py-2 rounded-full">Clear</button>
+            </div>
+            <ul id="historyList" class="space-y-2">
+            </ul>
+        </section>
+        <!-- Cards + History side by side section end -->
+    </main>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
